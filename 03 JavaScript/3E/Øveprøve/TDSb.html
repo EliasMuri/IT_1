@@ -1,0 +1,12 @@
+<script>
+    function tilfeldigeTall(n) {
+        let returArray = [];
+        for (i = 0; i < n; i++) {
+            let tilfeldig = Math.floor(Math.random() * 10) + 1;
+            returArray.push(tilfeldig);
+        }
+        return returArray;
+    }
+
+    console.log(tilfeldigeTall(1000));
+</script>

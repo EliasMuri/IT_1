@@ -1,0 +1,35 @@
+<script>
+    let tallListe = [
+        3, 7, -4, 10, -13, 21, 18, -1, 19, 10, -8, -17, 23, 29, 97, -2, -9, -52,
+        11, 83,
+    ];
+
+    //oppgave a og b:
+    let minimum = tallListe[0];
+    let maksimum = tallListe[0];
+    let sum = 0;
+    for (let i = 0; i < tallListe.length; i++) {
+        let tall = tallListe[i];
+        if (tall > maksimum) {
+            maksimum = tall;
+        }
+        if (tall < minimum) {
+            minimum = tall;
+        }
+        sum += tall;
+    }
+
+    console.log(`Det største tallet er: ${maksimum}`);
+    console.log(`Det minste tallet er: ${minimum}`);
+
+    //oppgave c:
+    console.log(`Variasjonsbredden er: ${maksimum - minimum}`);
+
+    //oppgave d:
+    console.log(
+        `Gjennomsnittet av verdiene i tabellen er ${sum / tallListe.length}`
+    );
+
+    //ekstra
+    console.log(`Sum: ${sum}`);
+</script>

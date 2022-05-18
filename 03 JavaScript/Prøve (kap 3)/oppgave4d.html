@@ -1,0 +1,16 @@
+<script>
+    let terningkast6 = false;
+    antForsok = 0;
+
+    while (!terningkast6) {
+        antForsok++;
+
+        let terning = Math.floor(Math.random() * 6) + 1;
+        console.log(`Fikk ${terning}`);
+
+        if (terning === 6) {
+            terningkast6 = true;
+            console.log(`Fikk terningkast 6 på ${antForsok} forsøk!`);
+        }
+    }
+</script>

@@ -1,0 +1,15 @@
+<script>
+    function nærmestNull(a, n = 1) {
+        let nærNull = 0;
+
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] > nærNull || a[i] < nærNull) {
+                nærNull = a[i];
+            }
+        }
+
+        console.log(nærmestNull([1, -2, -8, 4, 5]));
+        console.log(nærmestNull([10, -2, 7, 4, 1, -1, -1, 2, 9]));
+        console.log(nærmestNull([23, 18, 17, 22, 15, 20, 20]));
+    }
+</script>

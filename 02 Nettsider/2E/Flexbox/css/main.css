@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#main-wrapper {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    min-height: 100vh;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*kan skrive flex-end eller flex-start*/
+    /*kan skrive space-around eller space-between*/
+    /*kan skrive space-evenly*/
+}
+
+#menu a {
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: teal 1px 1px 2px;
+}
+
+#menu a:hover {
+    box-shadow: red 1px 1px 2px;
+}
+
+/* #fire { 
+    flex-grow: 10;
+} */

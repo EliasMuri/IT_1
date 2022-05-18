@@ -1,0 +1,21 @@
+<script>
+    //alternativ 1:
+    function tall() {
+        let tall1 = Math.floor(Math.random() * 10 + 1);
+        let tall2 = Math.floor(Math.random() * 10 + 1);
+        let produkt = tall1 * tall2;
+        console.log(`${tall1} * ${tall2} = ${produkt}`);
+    }
+
+    //alternativ 2:
+    function produkt(tall1, tall2) {
+        let produkt = tall1 * tall2;
+        console.log(`${tall1} * ${tall2} = ${produkt}`);
+    }
+
+    //her definerer vi tall 1 og 2, henter vi ut verdiene og sjekker hva produktet blir
+    //hvis vi ikke skriver inn noen setninger som de under, vil ikke vil få et produkt om vi
+    //skriver inn produkt() i konsollen. (undefined * undefined = NaN)
+    produkt(7, 8);
+    produkt(8, 9);
+</script>

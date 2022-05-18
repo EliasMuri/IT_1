@@ -1,0 +1,25 @@
+<script>
+    //dette gir et tilfeldig array med 1000 tall
+    let a = [];
+    for (let i = 0; i < 10000; i++) {
+        let ran = Math.floor(Math.random() * 10000) + 1;
+        a.push(ran);
+    }
+
+    /* let a = [1, 23, 32, 39, 12, 42, 31, 19]; */ //dette er bare et array skrevet inn
+
+    for (i = 0; i < a.length; i++) {
+        for (x = 1; x < a.length - i; x++) {
+            let b = a[x - 1];
+            let c = a[x];
+            if (b > c) {
+                a[x] = b;
+                a[x - 1] = c;
+            }
+        }
+    }
+
+    console.time("bubbleSort");
+    console.log(a);
+    console.timeEnd("bubbleSort");
+</script>

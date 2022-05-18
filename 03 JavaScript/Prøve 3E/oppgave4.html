@@ -1,0 +1,42 @@
+<script>
+    //a
+    function tilfeldigTall() {
+        let tilfeldig = Math.floor(Math.random() * 9) + 1;
+        console.log(tilfeldig);
+    }
+
+    tilfeldigTall();
+
+    //b
+
+    function tallkode() {
+        let koden = [];
+        for (i = 0; i < 4; i++) {
+            let tilfeldig = Math.floor(Math.random() * 9) + 1;
+            koden.push(tilfeldig);
+        }
+        return koden;
+    }
+    console.log(tallkode());
+
+    //c
+
+    function tallkode2(){
+
+        let koden = [];
+        let kuleKoden = [6, 4, 1, 5];
+        antForsok = 0;
+        for (i = 0; i < 4; i++) {
+            let tilfeldig = Math.floor(Math.random() * 9) + 1;
+            koden.push(tilfeldig);
+        }
+        return koden;
+        if(koden[i] !== kuleKoden){
+            sum += sum;
+        } else{
+            break;
+        }
+
+    }
+    console.log(`Det tok ${antForsok} før den fikke koden ${kuleKoden}.`);
+</script>

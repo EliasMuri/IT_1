@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(212, 34, 34);
+    margin: 0;
+    font-family: "Mountains of Christmas", cursive;
+}
+
+#tittel {
+    color: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+#wrapper {
+    margin: auto;
+    min-height: 100hv;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#wrapper div {
+    background-color: rgb(212, 34, 34);
+    width: 100px;
+    height: 100px;
+    flex-direction: row;
+    display: inline-flex;
+    border-radius: 50%;
+    justify-content: center;
+    margin: 40px;
+    margin-top: 50px;
+}
+
+#wrapper img {
+    background-color: white;
+    width: 100px;
+    left: auto;
+    display: block;
+    position: absolute;
+    top: -40px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    box-shadow: rgb(59, 59, 255) 3px 3px 2px;
+}
+
+a:hover {
+    box-shadow: white 3px 3px 2px;
+}
+
+h2 {
+    color: rgb(212, 34, 34);
+}

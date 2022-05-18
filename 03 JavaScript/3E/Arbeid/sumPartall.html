@@ -1,0 +1,14 @@
+<script>
+    //skriv ut summen av alle partall
+    function sumPartall(liste) {
+        sum = 0;
+        for (let i = 0; i < liste.length; i++) {
+            if (liste[i] % 2 == 0) {
+                sum = sum + liste[i];
+            }
+        }
+        console.log(sum);
+    }
+
+    sumPartall([1, 2, 5, 6, 3, 4]); //12
+</script>

@@ -1,0 +1,29 @@
+<script>
+    //DETTE VAR DET JEG PRØVDE PÅ FØRST
+    /* let array1 = [1, 0, 2, 3, 4];
+    let array2 = [3, 5, 6, 7, 8, 13];
+
+    for (i = 0; i < array1.length; i++) {
+        for (j = 0; j < array2.length; j++) {
+            if (i == j) {
+                let sum = array1[i] + array2[j];
+            }
+        }
+    } */
+
+    let array1 = [1, 0, 2, 3, 4];
+    let array2 = [3, 5, 6, 7, 8, 13];
+
+    if (array1.length >= array2.length) {
+        console.log(add(array1, array2));
+    } else {
+        console.log(add(array2, array1));
+    }
+
+    function add(a, b) {
+        for (let i = 0; i < b.length; i++) {
+            a[i] += b[i];
+        }
+        return a;
+    }
+</script>

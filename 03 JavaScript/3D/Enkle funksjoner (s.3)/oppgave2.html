@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function tilfeldigHilsen() {
+                let hei = 1;
+                let hallo = 2;
+                let godDag = 3;
+
+                for (let ant = 1; ant <= 3; ant++) {
+                    //hvis du har * 3, vil den gi tre tilfeldige svar. * 1 får du ett svar.
+                    let tilfeldig = Math.floor(Math.random() * 3) + 1;
+                    if (hei === tilfeldig) {
+                        console.log("Hei");
+                    }
+                    if (hallo === tilfeldig) {
+                        console.log("Hallo");
+                    }
+                    if (godDag === tilfeldig) {
+                        console.log("God dag");
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(238, 238, 165);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#main-wrapper {
+    max-width: 800px;
+    min-height: 100vh;
+    background-color: grey;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+        "h h h h h h"
+        "m m m m r r"
+        "f f f f f f";
+}
+
+h1 {
+    margin: 0;
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+#menu {
+    background-color: #c4c4c4;
+    display: flex;
+    justify-content: right;
+    margin: 2px -20px;
+}
+
+#menu a {
+    color: blue;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    border-left: 2px solid black;
+    text-transform: uppercase;
+}
+
+#menu a:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+#header {
+    grid-area: h;
+}
+
+#main {
+    padding: 20px;
+    grid-area: m;
+}
+
+#right {
+    padding: 20px;
+    grid-area: r;
+}
+
+#footer {
+    height: 100px;
+    grid-area: f;
+    background-color: grey;
+}
+
+#main div {
+    background-color: beige;
+    color: grey;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#right div {
+    background-color: beige;
+    color: grey;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+p {
+    background-color: beige;
+    color: grey;
+    padding: 15px;
+    border-radius: 10px;
+}

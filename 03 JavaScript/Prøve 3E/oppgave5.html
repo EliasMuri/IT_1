@@ -1,0 +1,14 @@
+<script>
+    function skuddårsTeller(n) {
+        returArray = [];
+        for (let i = 0; i < n; i = i + 4) {
+            let skuddår = 2020;
+            if (skuddår % 4 == 0) {
+                returArray.push(skuddår);
+            }
+
+            return returArray;
+        }
+    }
+    console.log(skuddårsTeller(50));
+</script>

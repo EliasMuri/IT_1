@@ -1,0 +1,22 @@
+<script>
+    let tall = Math.floor(Math.random() * 10) + 1;
+    let gjettet_tall = Number(prompt("Skriv inn et tall (1-10):"));
+    let antForsok = 1;
+
+    while (gjettet_tall != tall) {
+        if (gjettet_tall > tall) {
+            gjettet_tall = Number(
+                prompt(`Det er feil. Tallet er mindre enn ${gjettet_tall}`)
+            );
+        } else if (gjettet_tall < tall) {
+            gjettet_tall = Number(
+                prompt(`Det er feil. Tallet er større enn ${gjettet_tall}`)
+            );
+        }
+        antForsok++;
+    }
+
+    alert(
+        ` Gratulerer, ${tall} var riktig tall!\n Du brukte ${antForsok} antall forsøk!`
+    );
+</script>

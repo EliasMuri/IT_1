@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Valg</title>
+    </head>
+    <body>
+        <div id="oppgavesvar">
+            Jeg tipper:
+            <ul>
+                <li>a: true. b = 6 for å få false.</li>
+                <li>b: false. c = 7 for å få true.</li>
+                <li>c: true. b = 2 for å få false.</li>
+                <li>d: true. a = 8 for å få false.</li>
+                <li>e: false. b = 1 for å få true.</li>
+                <li>f: true. a = 7 for å få true.</li>
+                <li>g: false. c = "6" for å få true.</li>
+                <li>h: true. b = "7" for å få false.</li>
+            </ul>
+        </div>
+
+        <script>
+            let a = 3;
+            let b = 7;
+            let c = "7";
+            console.log(b !== c);
+        </script>
+    </body>
+</html>

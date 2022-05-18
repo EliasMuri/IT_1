@@ -1,0 +1,22 @@
+<script>
+    let tall1 = Math.floor(Math.random() * 10 + 1);
+    let tall2 = Math.floor(Math.random() * 10 + 1);
+
+    //alternativ 1 (begge funker):
+    if (tall1 > tall2) {
+        console.log(tall1);
+    } else if (tall1 < tall2) {
+        console.log(tall2);
+    } else if (tall1 === tall2) {
+        console.log("tall 1 og tall 2 er lik");
+    }
+
+    //alternativ 2:
+    if (tall1 > tall2) {
+        console.log(`${tall1} > ${tall2}`);
+    } else if (tall1 < tall2) {
+        console.log(`${tall1} < ${tall2}`);
+    } else if (tall1 === tall2) {
+        console.log(`${tall1} = ${tall2}`);
+    }
+</script>

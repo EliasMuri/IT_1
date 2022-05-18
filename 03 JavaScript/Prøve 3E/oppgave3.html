@@ -1,0 +1,25 @@
+<script>
+    //a
+    let tall = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55];
+    let sum = 0;
+    for (let i = 0; i < tall.length; i++) {
+        sum = sum + tall[i];
+    }
+
+    console.log(`Summen av tallene i lista er ${sum}.`);
+
+    //b
+    let tall2 = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55];
+
+    for (let j = 0; j < tall2.length; j++) {
+        console.log(`Indeks ${tall2.indexOf(tall2[j])}: ${tall2[j]}`);
+    }
+
+    //c
+    let tall3 = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55];
+    for (k = 0; k < 10; k++) {
+        l = tall3.length;
+        tall3.push(tall3[l - 1] + tall3[l - 2]);
+    }
+    console.log(tall3);
+</script>

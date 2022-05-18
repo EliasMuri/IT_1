@@ -1,0 +1,34 @@
+<script>
+    let tallene = [4, 8, 7, 9];
+
+    console.log(`Array: ${tallene}`);
+    console.log(`Lengde: ${tallene.length}`);
+    console.log(`Første element: ${tallene[0]}`); //hvis det spør om et tallnummer du ikke har -> "undefined"
+    // Legger til 100 i slutten av arrayet
+    let nyttTall = 100;
+    tallene.push(nyttTall);
+    console.log(`Legger til 100: ${tallene}`); //8-10 er mer basic enn du skal kunne (fremgangsmåten)
+
+    // Metode 1 - anbefaler denn:  //metodene etter 1 blir bare mer og mer abstrakt
+    for (let i = 0; i < tallene.length; i++) {
+        /* console.log(i); */
+        /* console.log(tallene[i]); */
+        console.log(`${i}: ${tallene[i]}`);
+    }
+
+    // Metode 2:
+    for (let tall of tallene) {
+        console.log(tall);
+    }
+
+    // Metode 3:
+    tallene.forEach(function (tall) {
+        console.log(tall);
+    });
+
+    // Metode 3.1:
+    function skrivUtTall(tall) {
+        console.log(tall);
+    }
+    tallene.forEach(skrivUtTall);
+</script>

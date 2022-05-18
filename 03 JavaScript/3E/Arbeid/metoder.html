@@ -1,0 +1,15 @@
+<script>
+    let tall = [1, 2, 5];
+
+    // ikke gjør det slik: tall[3] = 6; (fordi funker bare i JavaScript)
+    tall.push(6); //append 6 i python
+    //tall.push(9, 10, 11, 23) - går an å ta flere samtidig
+    tall.push(7);
+    tall.pop(); //popper ut det siste elementet
+    tall.splice(2, 0, 3, 4); //indeks, ant som skal slettes, hvilke tall som skal legges til (3, 4)
+    tall.splice(4, 0, 0, 0, 0); //finner første forekomst av 0, ved å skrive tall.indexOf(0)
+    tall.shift(); //fjerner første elementet i arrayet
+    tall.unshift(9); //legger til 9 i begynnelsen av arrayet
+    tall.splice(tall.indexOf(0), 3); //fjernet alle (de tre) nullene
+    //kan konsolle for hver linje, for å se hva som skjer
+</script>

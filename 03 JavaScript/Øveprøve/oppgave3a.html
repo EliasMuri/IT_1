@@ -1,0 +1,17 @@
+<script>
+    let alder = prompt("Hvor gammel er du?"); //kan også bruke Math.random
+
+    if (alder <= 3) {
+        console.log("Du får kjøre gratis med NSB!");
+    } else if (alder >= 4 && alder <= 15) {
+        console.log("Du får 50% rabatt med NSB!");
+    } else if (alder >= 67) {
+        console.log("Du får 50% med NSB!");
+    } else {
+        console.log("Du får dessverre ikke rabbat, her hos NSB!");
+    }
+
+    if (alder < 0) {
+        console.log("Nei, det får du ikke, siden du tuller:(");
+    }
+</script>

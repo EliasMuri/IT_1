@@ -1,0 +1,339 @@
+body {
+    background-color: #5dc585;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#main-wrapper {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas:
+        "h h h h h h h h h h"
+        "l l m m m m m m r r"
+        "f f f f f f f f f f";
+}
+
+#header {
+    background-color: #5dc585;
+    top: 0;
+    grid-area: h;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: sticky;
+    justify-content: left;
+}
+
+#meny {
+    margin-top: 10px;
+}
+
+#header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+}
+
+#meny a:hover {
+    background-color: #50b677;
+}
+
+#header img {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+#main {
+    grid-area: m;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "o o"
+        "f k"
+        "b j";
+    background-color: #a9d8b0;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+}
+
+#main a {
+    text-decoration: none;
+    color: black;
+}
+
+#main p {
+    color: black;
+    padding: 15px;
+}
+
+#main img {
+    max-width: 250px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#main h2 {
+    padding: 15px;
+}
+
+#main h3 {
+    padding: 15px;
+}
+
+#overskrift {
+    grid-area: o;
+    max-width: 300px;
+    margin: auto;
+}
+
+#ferg {
+    grid-area: f;
+    background-color: white;
+    max-width: 300px;
+    margin: 20px;
+    padding: 10px;
+}
+
+#rbk {
+    grid-area: k;
+    background-color: white;
+    max-width: 300px;
+    margin: 20px;
+    padding: 10px;
+}
+
+#billetter {
+    grid-area: b;
+    background-color: white;
+    max-width: 300px;
+    margin: 20px;
+    padding: 10px;
+}
+
+#mjøndalen {
+    grid-area: j;
+    background-color: white;
+    max-width: 300px;
+    margin: 20px;
+    padding: 10px;
+}
+
+#left_side {
+    grid-area: l;
+    background-color: white;
+    color: black;
+    font-size: 85%;
+    padding-left: 10px;
+}
+
+#left_side a {
+    text-decoration: none;
+    color: black;
+}
+
+#left_side a:hover {
+    border-bottom: 2px solid #5dc585;
+}
+
+#left_side table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+#left_side img {
+    height: 20px;
+    width: 20px;
+}
+
+th {
+    text-align: left;
+}
+
+#tabell {
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+#resultat {
+    background-color: white;
+}
+
+#right_side {
+    grid-area: r;
+    background-color: white;
+    padding: 20px;
+}
+
+#right_side img {
+    max-width: 150px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#hovedponsor {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+#sponsorer {
+    background-color: white;
+}
+
+#footer {
+    grid-area: f;
+    width: 1200px;
+    margin: auto;
+    color: black;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer a:hover {
+    border-bottom: 2px solid #5dc585;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: black;
+}
+
+#nyhet_ferg {
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+}
+
+#nyhet_rbk {
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+}
+
+#nyhet_bill {
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+}
+
+#nyhet_bill table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+#nyhet_mjø {
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+}
+
+#eg_nyhet {
+    background-color: white;
+    width: 600px;
+    margin: 15px;
+    padding: 20px;
+}
+
+#eg_nyhet table {
+    max-width: 400px;
+    margin: auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+#om_oss {
+    width: 600px;
+    background-color: #a9d8b0;
+    padding: 15px;
+}
+
+#om_oss img {
+    max-width: 60%;
+}
+
+#om_oss h2 {
+    padding: 15px;
+}
+
+#om_klubben {
+    background-color: #a9d8b0;
+    border: 5px solid black;
+    font-size: 90%;
+    padding-left: 10px;
+}
+
+#lagliste {
+    background-color: #a9d8b0;
+    padding: 15px;
+    width: 600px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#lagliste h1 {
+    padding-left: 15px;
+}
+
+#kontakt_oss {
+    background-color: white;
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#kontakt_oss img {
+    max-width: 100px;
+    display: block;
+}
+
+#kontakt_oss h3 {
+    max-width: 100px;
+    margin: auto;
+}
+
+#nr1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#nr2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#nr3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

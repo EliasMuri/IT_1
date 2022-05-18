@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(58, 58, 212);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#main-wrapper {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    color: rgb(231, 230, 216);
+    background-color: rgb(103, 103, 238);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+#box {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: sticky;
+    left: -50px;
+    top: 0px;
+}
+
+p {
+    position: relative;
+}
+
+#p-child {
+    position: absolute;
+    background-color: red;
+    height: 15px;
+    width: 3px;
+    left: 10px;
+}

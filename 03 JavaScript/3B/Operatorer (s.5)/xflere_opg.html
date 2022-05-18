@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fortsatt operatorer</title>
+    </head>
+    <body>
+        <script>
+            let navn;
+            console.log(typeof navn);
+            let alder = 2;
+            console.log(typeof alder);
+            let alder2 = 2.718;
+            console.log(typeof alder2);
+            let navn2 = "Ola";
+            console.log(typeof navn2);
+            let aarstall = "1984";
+            console.log(typeof aarstall);
+
+            let tekst1 = "17";
+            let tallfratekst1 = Number.isIntreger(tekst1);
+            let tekst2 = "20 17";
+            let tallfratekst2 = parseInt(tekst2);
+            let tekst3 = "4,7";
+            let tallfratekst3 = parseInt(tekst3);
+            console.log(tallfratekst1, tallfratekst2, tallfratekst3);
+        </script>
+
+        <div id="oppgave13">
+            <h3>En del av oppgave 13</h3>
+            <p>
+                <ul>
+                    <li>a: Disse tre variablene er string (tekst).</li>
+                    <li>b: Det går ikke med 4,7 pga feil desimalskilletegn. 
+                        Det går ikke med 20 17, siden det er mellomrom i mellom.</li>
+                    <li>d: Det fungerer for 17 og 4,7 men ikke for 20 17. Der 
+                        står det: Uncaught TypeError: Number.isIntreger is not a function.</li>
+                </ul>
+            </p>
+        </div>
+    </body>
+</html>

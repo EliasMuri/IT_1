@@ -1,0 +1,43 @@
+<script>
+    let byer = [
+        "Venezia",
+        "Liverpool",
+        "New York",
+        "Lisboa",
+        "Berlin",
+        "San Francisco",
+        "Amsterdam",
+    ];
+
+    //a
+    byer.push("Budapest");
+
+    //b
+    for (i = 0; i < byer.length; i++) {
+        console.log(byer[i]);
+    }
+
+    //c
+    function byPlukker() {
+        let valgtBy = Math.floor(Math.random() * byer.length);
+        console.log(`Din 1. destinasjon er ${byer[valgtBy]}`);
+        if (byer[valgtBy] == byer[i]) {
+            splice(byer[i], 1);
+        }
+    }
+
+    byPlukker();
+    //d
+
+    function byPlukker2() {
+        let destinasjon = 0;
+        for (j = 0; j < 10; j++) {
+            //kan også ta byer.length, men eneste forskjellen er at antall destinasjoner blir 8 og ikke 10
+            let valgtBy = Math.floor(Math.random() * byer.length);
+            destinasjon++;
+            console.log(`Din ${destinasjon}. destinasjon er ${byer[valgtBy]}`);
+        }
+    }
+
+    byPlukker2();
+</script>

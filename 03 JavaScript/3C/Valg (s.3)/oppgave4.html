@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Berg-og-dal-bane pt.2</title>
+    </head>
+    <body>
+        <script>
+            let høyde = prompt("Skriv inn høyden din her:") * 1; //skriver *1 for å omgjøre string til number for
+            //at prorgammet skal gå
+
+            if (høyde > 100 && høyde < 180) {
+                console.log("Du kan ta berg-og-dalbanen.");
+            } else {
+                console.log(
+                    "Du har ikke riktig høyde og kan ikke ta berg-og-dal-banen."
+                );
+            }
+
+            //for å få block command (/* */) på hele, tast: shift+alt+a
+
+            //Alternativ 2
+            /* if (høyde > 100) {
+                if (høyde < 180) {
+                    ("Du kan ta berg-og-dal-banen.");
+                }
+            } */
+
+            //Alternativ 3 (denne er smart)
+            /* if (høyde < 100) {
+                console.log("FOr lav");
+            } else if (høyde > 180) {
+                console.log("For høy");
+            } else {
+                console.log("Du kan ta berg-og-dal-banen.");
+            } */
+        </script>
+    </body>
+</html>

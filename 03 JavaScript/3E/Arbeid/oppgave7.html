@@ -1,0 +1,25 @@
+<script>
+    function beholdYatzy(utfall, fjerne = []) {
+        //fjerne har vi satt som en default-verdi
+        if (fjerne.length == 0) {
+            console.log(utfall);
+            return utfall;
+        } else {
+            for (let i = 0; i < fjerne.length; i++) {
+                /* console.log(fjerne[i]); - denne er for å sjekke på veien*/
+                let slett = fjerne[i];
+                for (let j = 0; j < utfall.length; j++) {
+                    if (slett == utfall[j]) {
+                        console.log(j, slett);
+                        utfall.splice(j, 1);
+                        j--;
+                    }
+                }
+            }
+            console.log(utfall);
+            return utfall;
+        }
+    }
+
+    beholdYatzy([1, 1, 2, 3, 4], [1, 4]);
+</script>

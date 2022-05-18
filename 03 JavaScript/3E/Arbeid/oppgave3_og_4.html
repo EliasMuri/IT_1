@@ -1,0 +1,24 @@
+<script>
+    let tall = [2, 4, 6, 8];
+
+    //oppgave 3:
+    tall.pop();
+    tall.splice(0, 1);
+    tall.splice(1, 0, 5);
+    tall.splice(0, 0, 3);
+    tall.push(7);
+    tall.splice(0, 1, "tre");
+    tall.splice(2, 1, "fem");
+    tall.pop();
+    tall.push("syv");
+
+    //oppgave 4:
+    console.log(tall.indexOf(10));
+    console.log(tall.lastIndexOf(10));
+    //får -1 på begge, det vil si at verdien 10 ikke eksisterer
+    //hvis den har verdien, returnerer den ineksen (plassen) til den første forekomsten av tallet
+    //indexOf(4) returnere tallet 1
+
+    /* const resultat = tall.filter ((x) => x % 2 == 0);
+    console.log(resultat); */
+</script>

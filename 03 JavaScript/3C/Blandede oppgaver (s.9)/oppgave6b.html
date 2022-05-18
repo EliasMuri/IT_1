@@ -1,0 +1,33 @@
+<script>
+    //første forsøk
+    /* function sang(sangtekst1, sangtekst2) {
+        for (let i = 0; i <= 74; i++) {
+            for (j = 0; j <= 9; j++) {
+                console.log(`${sangtekst1 * 9}. ` + `${sangtekst2}`);
+            }
+        }
+    }
+    sang("gucci gang", "Spend three racks on new chains"); */
+
+    //andre forsøk
+    let sangtekst1 =
+        "Gucci gang gucci gang gucci gang gucci gang gucci gang gucci gang gucci gang gucci gang gucci gang.";
+    let sangtekst2 = "Spend three racks on new chains.";
+    let sangtekst3 = "gucci gang";
+
+    //alternativ 1:
+    for (i = 0; i <= 74; i++) {
+        for (j = 0; j < 9; j++) {
+            console.log(sangtekst3);
+        }
+        console.log(sangtekst2);
+        console.log("");
+    }
+
+    //alternativ 2:
+    for (i = 0; i <= 74; i++) {
+        console.log(sangtekst1);
+        console.log(sangtekst2);
+        console.log("");
+    }
+</script>

@@ -1,0 +1,21 @@
+<script>
+    let terninger = 5;
+    let antallEnere = 0;
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < terninger; j++) {
+            let kast = Math.floor(Math.random() * 6 + 1);
+            if (kast === 1) {
+                antallEnere += 1;
+            }
+        }
+        if (antallEnere === 5) {
+            break;
+        }
+        terninger = 5 - antallEnere;
+    }
+    if (antallEnere === 5) {
+        console.log("YATZY!");
+    } else {
+        console.log(`Du fikk ${antallEnere} enere.`);
+    }
+</script>

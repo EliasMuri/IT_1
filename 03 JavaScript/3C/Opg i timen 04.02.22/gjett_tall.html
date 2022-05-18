@@ -1,0 +1,25 @@
+<script>
+    let tall = Math.floor(Math.random() * 10) + 1;
+    let gjettet_tall = prompt("Skriv inn et tall (1-10):");
+    let antForsok = 1;
+
+    while (gjettet_tall != tall) {
+        gjettet_tall = Number(
+            prompt(
+                `Tallet ${gjettet_tall} er feil. Skriv inn et nytt tall (1-10):`
+            )
+        );
+        antForsok++;
+    }
+
+    if (tall === gjettet_tall) {
+        console.log(
+            `Gratulerer, ${tall} var riktig tall!\n Du brukte ${antForsok} antall forsøk!`
+        );
+    }
+
+    //kan skrive istedenfor if-setningen:
+    /* alert(
+        ` Gratulerer, ${tall} var riktig tall!\n Du brukte ${antForsok} antall forsøk!`
+    ); */
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>20-siders terning</title>
+    </head>
+    <body>
+        <script>
+            let terning = Math.floor(Math.random() * 21);
+
+            if (terning <= 6) {
+                console.log("Du fikk 6 eller mindre.");
+            }
+
+            if (terning > 6 && terning < 18) {
+                console.log("Du fikk mellom 6 og 18.");
+            }
+
+            if (terning >= 18) {
+                console.log("Du fikk 18 eller mer.");
+            }
+
+            if (terning === 13) {
+                console.log("Du fikk 13!");
+            }
+        </script>
+    </body>
+</html>
